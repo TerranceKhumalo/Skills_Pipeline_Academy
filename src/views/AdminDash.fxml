@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDrawer?>
+<?import com.jfoenix.controls.JFXHamburger?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="210.0" style="-fx-background-color: #006cac;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="200.0" prefWidth="210.0">
+               <children>
+                  <ImageView fitHeight="48.0" fitWidth="59.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../icons/tshimologong_logo_white1.gif" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="78.0" layoutY="2.0" prefHeight="41.0" prefWidth="80.0" text="Skills Pipeline&#10;    Academy" textFill="WHITE" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Label>
+                  <JFXButton fx:id="homeBtn" alignment="BOTTOM_LEFT" layoutY="150.0" prefHeight="40.0" prefWidth="110.0" text="     DASHBOARD" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../icons/icons8_Speedometer_50px_1.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="assignmentBtn" alignment="BOTTOM_LEFT" layoutY="200.0" prefHeight="40.0" prefWidth="110.0" text="     INSTRUCTORS" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../icons/icons8_Add_List_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <JFXButton fx:id="progressreportBtn" alignment="BOTTOM_LEFT" layoutY="250.0" prefHeight="40.0" prefWidth="110.0" text="     MAIL" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../icons/icons8_Combo_Chart_50px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+                  <BorderPane layoutX="16.0" layoutY="50.0" prefHeight="1.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </JFXDrawer>
+      <AnchorPane layoutX="222.0" layoutY="18.0" prefHeight="50.0" prefWidth="578.0" style="-fx-background-color: #f5fafe;" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXHamburger fx:id="hamburger" layoutX="59.0" prefHeight="30.0" prefWidth="30.0" style="-fx-region-border: green;" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

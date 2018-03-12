@@ -11,11 +11,11 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainDashBoradController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" prefHeight="700.0" prefWidth="210.0" style="-fx-background-color: #006cac;">
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="210.0" style="-fx-background-color: #006cac;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="210.0">
+            <AnchorPane prefHeight="700.0" prefWidth="210.0">
                <children>
                   <ImageView fitHeight="48.0" fitWidth="59.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0">
                      <image>
@@ -102,6 +102,11 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
+                  <Label layoutX="80.0" layoutY="80.0" prefHeight="30.0" prefWidth="65.0" text="Welcome" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
                   <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0">
                      <image>
                         <Image url="@../icons/icons8_Instagram_50px_1.png" />
@@ -135,15 +140,66 @@
                   <BorderPane layoutX="16.0" layoutY="50.0" prefHeight="1.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
                   <BorderPane layoutX="9.0" layoutY="150.0" prefHeight="1.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
                   <BorderPane layoutX="14.0" layoutY="655.0" prefHeight="1.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                  <JFXButton layoutY="74.0" prefHeight="59.0" prefWidth="210.0" text="Welcome" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
                </children>
             </AnchorPane>
          </children>
       </JFXDrawer>
-      <AnchorPane layoutX="222.0" layoutY="8.0" prefHeight="50.0" prefWidth="578.0" style="-fx-background-color: #f5fafe;" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutX="232.0" layoutY="18.0" prefHeight="50.0" prefWidth="578.0" style="-fx-background-color: #f5fafe;" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <JFXHamburger fx:id="hamburger" layoutX="59.0" prefHeight="30.0" prefWidth="30.0" style="-fx-region-border: green;" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0" />
          </children>
       </AnchorPane>
+      <Label layoutX="600.0" layoutY="75.0" prefHeight="40.0" prefWidth="190.0" text="Assignments" AnchorPane.topAnchor="75.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="159.0" prefHeight="50.0" prefWidth="70.0" text="Quize">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <BorderPane layoutX="250.0" layoutY="210.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #f7f7f7;" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="0.0" />
+      <BorderPane layoutX="270.0" layoutY="300.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #f7f7f7;" AnchorPane.leftAnchor="255.0" AnchorPane.rightAnchor="200.0" />
+      <Label layoutX="350.0" layoutY="250.0" prefHeight="50.0" prefWidth="150.0" text="Course Topic">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="550.0" layoutY="250.0" prefHeight="50.0" prefWidth="80.0" text="Status">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="700.0" layoutY="250.0" prefHeight="50.0" prefWidth="80.0" text="Results">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="260.0" text="#">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="330.0" text="1">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="260.0" layoutY="390.0" text="2">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <BorderPane layoutX="270.0" layoutY="360.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #f7f7f7;" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="200.0" />
+      <BorderPane layoutX="260.0" layoutY="420.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #f7f7f7;" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="200.0" />
+      <Label layoutX="262.0" layoutY="451.0" text="3" AnchorPane.leftAnchor="260.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <BorderPane layoutX="270.0" layoutY="480.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #f7f7f7;" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="200.0" />
+      <Label layoutX="355.0" layoutY="310.0" prefHeight="50.0" prefWidth="140.0" text="Java Basics and&#10;working with Data Types&#10;" />
+      <Label layoutX="355.0" layoutY="370.0" prefHeight="50.0" prefWidth="130.0" text="Using operators and&#10;Decision constructs&#10;&#10;" />
+      <Label layoutX="355.0" layoutY="440.0" prefHeight="50.0" prefWidth="150.0" text="Creating and using arrays&#10;&#10;&#10;" />
    </children>
 </AnchorPane>
