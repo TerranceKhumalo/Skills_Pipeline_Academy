@@ -11,23 +11,23 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainDashBoradController">
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainDashBoradController">
    <children>
-      <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" prefHeight="700.0" prefWidth="210.0" style="-fx-background-color: #006cac;">
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" prefHeight="640.0" prefWidth="210.0" style="-fx-background-color: #cc3300;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <AnchorPane prefHeight="200.0" prefWidth="210.0">
+            <AnchorPane prefHeight="640.0" prefWidth="210.0">
                <children>
-                  <ImageView fitHeight="48.0" fitWidth="59.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0">
+                  <ImageView fitHeight="48.0" fitWidth="59.0" layoutX="5.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="0.0">
                      <image>
                         <Image url="@../icons/tshimologong_logo_white1.gif" />
                      </image>
                   </ImageView>
-                  <Label layoutX="78.0" layoutY="2.0" prefHeight="41.0" prefWidth="80.0" text="Skills Pipeline&#10;    Academy" textFill="WHITE" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="0.0">
+                  <Label layoutX="90.0" layoutY="14.0" prefHeight="41.0" prefWidth="80.0" text="Skills Pipeline&#10;    Academy" textFill="WHITE" AnchorPane.leftAnchor="90.0" AnchorPane.topAnchor="0.0">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <JFXButton fx:id="homeBtn" alignment="BOTTOM_LEFT" layoutY="200.0" prefHeight="40.0" prefWidth="110.0" text="     HOME" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <JFXButton fx:id="homeBtn" alignment="BOTTOM_LEFT" layoutY="213.0" prefHeight="40.0" prefWidth="110.0" text="     HOME" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -42,7 +42,7 @@
                         <Insets />
                      </opaqueInsets>
                   </JFXButton>
-                  <JFXButton fx:id="assignmentBtn" alignment="BOTTOM_LEFT" layoutY="250.0" prefHeight="40.0" prefWidth="110.0" text="     ASSIGNMENTS" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <JFXButton fx:id="assignmentBtn" alignment="BOTTOM_LEFT" layoutY="263.0" prefHeight="40.0" prefWidth="110.0" text="     ASSIGNMENTS" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -54,7 +54,7 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton fx:id="progressreportBtn" alignment="BOTTOM_LEFT" layoutY="300.0" prefHeight="40.0" prefWidth="110.0" text="     PROGRESS REPORT" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <JFXButton fx:id="progressreportBtn" alignment="BOTTOM_LEFT" layoutY="313.0" prefHeight="40.0" prefWidth="110.0" text="     PROGRESS REPORT" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -66,7 +66,7 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton fx:id="calendarBtn" alignment="BOTTOM_LEFT" layoutY="350.0" prefHeight="40.0" prefWidth="110.0" text="     CALENDAR" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <JFXButton fx:id="calendarBtn" alignment="BOTTOM_LEFT" layoutY="363.0" prefHeight="40.0" prefWidth="110.0" text="     CALENDAR" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -78,7 +78,7 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton fx:id="courseMaterialBtn" alignment="BOTTOM_LEFT" layoutY="400.0" prefHeight="40.0" prefWidth="110.0" text="     COURSE MATERIAL" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <JFXButton fx:id="courseMaterialBtn" alignment="BOTTOM_LEFT" layoutY="413.0" prefHeight="40.0" prefWidth="110.0" text="     COURSE MATERIAL" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -90,7 +90,7 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <JFXButton fx:id="discussionBtn" alignment="BOTTOM_LEFT" layoutY="450.0" prefHeight="40.0" prefWidth="110.0" text="     DISCUSSIONS" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                  <JFXButton fx:id="discussionBtn" alignment="BOTTOM_LEFT" layoutY="463.0" prefHeight="40.0" prefWidth="110.0" text="     DISCUSSIONS" textFill="#fffefe" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
                      <font>
                         <Font size="15.0" />
                      </font>
@@ -122,25 +122,25 @@
                         <Image url="@../icons/icons8_GitHub_50px_1.png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="70.0" fitWidth="60.0" layoutX="10.0" layoutY="90.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="5.0">
                      <image>
                         <Image url="@../icons/icons8_Male_User_50px_1.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="80.0" layoutY="100.0" prefHeight="30.0" prefWidth="60.0" text="Java Ninja" textFill="WHITE">
+                  <Label layoutX="75.0" layoutY="100.0" prefHeight="41.0" prefWidth="68.0" text="Welcome&#10;Java Ninja" textFill="WHITE">
                      <font>
                         <Font size="13.0" />
                      </font>
                   </Label>
-                  <BorderPane layoutX="16.0" layoutY="50.0" prefHeight="1.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                  <BorderPane layoutX="9.0" layoutY="150.0" prefHeight="1.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <BorderPane layoutX="16.0" layoutY="65.0" prefHeight="1.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <BorderPane layoutX="9.0" layoutY="180.0" prefHeight="1.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
                   <BorderPane layoutX="14.0" layoutY="655.0" prefHeight="1.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                  <JFXButton layoutY="74.0" prefHeight="59.0" prefWidth="210.0" text="Welcome" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <BorderPane layoutX="9.0" layoutY="610.0" prefHeight="1.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
                </children>
             </AnchorPane>
          </children>
       </JFXDrawer>
-      <AnchorPane layoutX="222.0" layoutY="8.0" prefHeight="50.0" prefWidth="578.0" style="-fx-background-color: #f5fafe;" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <AnchorPane layoutX="222.0" layoutY="8.0" prefHeight="65.0" prefWidth="578.0" style="-fx-background-color: #f5fafe;" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <JFXHamburger fx:id="hamburger" layoutX="59.0" prefHeight="30.0" prefWidth="30.0" style="-fx-region-border: green;" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="0.0" />
          </children>
