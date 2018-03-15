@@ -3,6 +3,7 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXDrawer?>
 <?import com.jfoenix.controls.JFXHamburger?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
@@ -11,9 +12,9 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="640.0" prefWidth="1300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="210.0" style="-fx-background-color: #006cac;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <JFXDrawer fx:id="drawer" defaultDrawerSize="150.0" direction="RIGHT" layoutX="10.0" layoutY="10.0" prefHeight="700.0" prefWidth="210.0" style="-fx-background-color: #cc3300;" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <AnchorPane prefHeight="700.0" prefWidth="210.0">
                <children>
@@ -102,44 +103,17 @@
                         </ImageView>
                      </graphic>
                   </JFXButton>
-                  <Label layoutX="80.0" layoutY="80.0" prefHeight="30.0" prefWidth="65.0" text="Welcome" textFill="WHITE">
-                     <font>
-                        <Font size="15.0" />
-                     </font>
-                  </Label>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="10.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0">
-                     <image>
-                        <Image url="@../icons/icons8_Instagram_50px_1.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="60.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0">
-                     <image>
-                        <Image url="@../icons/icons8_Pinterest_50px_1.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="110.0" layoutY="660.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0">
-                     <image>
-                        <Image url="@../icons/icons8_Twitter_Circled_50px_1.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="160.0" layoutY="656.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="10.0">
-                     <image>
-                        <Image url="@../icons/icons8_GitHub_50px_1.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="5.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../icons/icons8_Male_User_50px_1.png" />
-                     </image>
-                  </ImageView>
-                  <Label layoutX="80.0" layoutY="100.0" prefHeight="30.0" prefWidth="60.0" text="Java Ninja" textFill="WHITE">
-                     <font>
-                        <Font size="13.0" />
-                     </font>
-                  </Label>
                   <BorderPane layoutX="16.0" layoutY="50.0" prefHeight="1.0" prefWidth="800.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                  <BorderPane layoutX="9.0" layoutY="150.0" prefHeight="1.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-                  <BorderPane layoutX="14.0" layoutY="655.0" prefHeight="1.0" prefWidth="200.0" style="-fx-background-color: white;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+                  <ImageView fitHeight="65.0" fitWidth="70.0" layoutX="5.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../Documents/Dashboard/src/imageIcons/icons8_Male_User_50px_1.png" />
+                     </image></ImageView>
+                  <Label layoutX="90.0" layoutY="110.0" prefHeight="10.0" prefWidth="80.0" text="Welcome&#10;" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="90.0" layoutY="130.0" prefHeight="20.0" prefWidth="59.0" text="Java Ninja" textFill="WHITE" />
                </children>
             </AnchorPane>
          </children>
@@ -180,26 +154,9 @@
             <Font size="25.0" />
          </font>
       </Label>
-      <Label layoutX="260.0" layoutY="330.0" text="1">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
-      <Label layoutX="260.0" layoutY="390.0" text="2">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
       <BorderPane layoutX="270.0" layoutY="360.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #f7f7f7;" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="200.0" />
       <BorderPane layoutX="260.0" layoutY="420.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #f7f7f7;" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="200.0" />
-      <Label layoutX="262.0" layoutY="451.0" text="3" AnchorPane.leftAnchor="260.0">
-         <font>
-            <Font size="20.0" />
-         </font>
-      </Label>
       <BorderPane layoutX="270.0" layoutY="480.0" prefHeight="1.0" prefWidth="200.0" style="-fx-border-color: #f7f7f7;" AnchorPane.leftAnchor="260.0" AnchorPane.rightAnchor="200.0" />
-      <Label layoutX="355.0" layoutY="310.0" prefHeight="50.0" prefWidth="140.0" text="Java Basics and&#10;working with Data Types&#10;" />
-      <Label layoutX="355.0" layoutY="370.0" prefHeight="50.0" prefWidth="130.0" text="Using operators and&#10;Decision constructs&#10;&#10;" />
-      <Label layoutX="355.0" layoutY="440.0" prefHeight="50.0" prefWidth="150.0" text="Creating and using arrays&#10;&#10;&#10;" />
+      <JFXTreeTableView layoutX="376.0" layoutY="428.0" prefHeight="222.0" prefWidth="248.0" />
    </children>
 </AnchorPane>

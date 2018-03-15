@@ -5,6 +5,7 @@
  */
 package controllers;
 
+import java.awt.event.ActionEvent;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -18,56 +19,69 @@ import javafx.fxml.Initializable;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 
-
 public class MainDashBoradController implements Initializable {
 
-    @FXML
-    private AnchorPane anchor;
-	
-    @FXML
-    private JFXButton homeBtn;
+	@FXML
+	private AnchorPane anchor;
 
-    @FXML
-    private JFXButton assignmentBtn;
+	@FXML
+	private JFXButton homeBtn;
 
-    @FXML
-    private JFXButton progressreportBtn;
+	@FXML
+	private JFXButton assignmentBtn;
 
-    @FXML
-    private JFXButton calendarBtn;
+	@FXML
+	private JFXButton progressreportBtn;
 
-    @FXML
-    private JFXButton courseMaterialBtn;
+	@FXML
+	private JFXButton calendarBtn;
 
-    @FXML
-    private JFXButton discussionBtn;
-    
-    @FXML
-    private JFXHamburger hamburger;	
-    
-    @FXML
-    private JFXDrawer drawer;
-     
-    
-    @Override
-    public void initialize(URL url, ResourceBundle rb) {
-    	
-    	drawer.setSidePane();
-    	HamburgerBackArrowBasicTransition resize = new HamburgerBackArrowBasicTransition(hamburger);
-    	resize.setRate(- 1);
-    	hamburger.addEventHandler(MouseEvent.MOUSE_PRESSED, (e) -> {
-    		resize.setRate(resize.getRate() * - 1);
-    		resize.play();
-    		
-    		if(drawer.isShown())
-    			drawer.close();
-    	else 
-    		drawer.open();
-    			
-    		
-    	});
-    	
-    	
-    	
-    }
- }
+	@FXML
+	private JFXButton courseMaterialBtn;
+
+	@FXML
+	private JFXButton discussionBtn;
+
+	@FXML
+	private JFXHamburger hamburger;
+
+	@FXML
+	private JFXDrawer drawer;
+
+	@Override
+	public void initialize(URL url, ResourceBundle rb) {
+
+		hamburger.addEventHandler(MouseEvent.MOUSE_PRESSED, (e) -> {
+			opencloseDrawer(e);
+		});
+
+	}
+
+	public void opencloseDrawer(MouseEvent event) {
+
+		drawer.setSidePane();
+		HamburgerBackArrowBasicTransition resize;
+		resize = new HamburgerBackArrowBasicTransition(hamburger);
+		//resize.setRate(resize.getRate() * -1);
+		resize.setRate(-1);
+		
+		resize.setRate(resize.getRate() * -1);
+		resize.play();
+
+		
+		
+
+		if (drawer.isShown()) {
+			
+			drawer.close();
+			
+			}
+		else {
+			
+			//
+			drawer.open();
+			
+		}
+
+	}
+}
